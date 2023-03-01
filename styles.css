@@ -1,0 +1,58 @@
+/* signup page stylesheet */
+:root {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid red;
+}
+
+.left-items {
+    background: url("./images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+.img-container {
+    position: relative;
+    padding: 8px;
+    width: 50%;
+    aspect-ratio: 1;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo {
+    width: 100%;
+}
+
+.form-container {
+    background-color: aliceblue;
+
+    width: 60%;
+    border: 1px solid green;
+}
