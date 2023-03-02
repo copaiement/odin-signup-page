@@ -194,3 +194,32 @@ a {
 a:visited {
     color: var(--link-visited);
 }
+
+/* accomodate mobile */
+@media only screen and (max-width: 700px) {
+    body {
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left-items {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .form-container {
+        width: 100%;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .form-row {
+        width: 75%;
+    }
+
+    button {
+        width: 30%;
+    }
+
+}
