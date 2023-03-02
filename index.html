@@ -15,7 +15,80 @@
         </div>
     </div>
     <div class="form-container">
-
+        <p class="description">
+            <span>Want more climbing content, deals, and information on new drops?</span>
+            Sign up now to get access to the World of RDSH.
+        </p>
+        <p class="description">
+            Put in your information and hit <em>Create Account</em>. It's that easy.
+        </p>
+        <form onsubmit="return verifyPwd()" action="#" method="get" class="signup-form">
+            <div class="inputs">
+                <div class="form-title">Let's do this!</div>
+                <div class="form-row">
+                    <label for="first-name">First Name</label>
+                    <input 
+                        id="first-name" 
+                        name="firstname" 
+                        type="text"
+                        minlength="2"
+                        maxlength="10"
+                        pattern="([A-Za-z]{2,})"
+                        required>
+                </div>
+                <div class="form-row">
+                    <label for="last-name">Last Name</label>
+                    <input 
+                        id="last-name" 
+                        name="lastname" 
+                        type="text"
+                        minlength="2"
+                        maxlength="10"
+                        pattern="([A-Za-z]{2,})" 
+                        required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input 
+                        id="email" 
+                        name="email" 
+                        type="email" 
+                        title="Please enter a valid email address"
+                        required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number (optional)</label>
+                    <input 
+                        id="phone" 
+                        name="phone" 
+                        type="text"
+                        pattern="(^\d{10}$)"
+                        title="Please enter a valid phone number">
+                        
+                </div>
+                <div class="form-row">
+                    <label for="pwd">Password</label>
+                    <input 
+                        id="pwd" 
+                        name="pwd" 
+                        type="password"
+                        required/>
+                    <div class="pwd-reject"></div>
+                </div>
+                <div class="form-row">
+                    <label for="pwd-confirm">Confirm Password</label>
+                    <input 
+                        id="pwd-confirm" 
+                        name="pwd-confirm" 
+                        type="password"
+                        required>
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        <p class="have-account">
+            Already have an account? <a href="">Log in</a>
+        </p>
     </div>
 
 </body>

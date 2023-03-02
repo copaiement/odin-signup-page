@@ -1,5 +1,23 @@
 /* signup page stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rubik+Mono+One&display=swap');
+
 :root {
+    font-size: 24px;
+    --bg-color: rgb(192, 192, 192);
+    --font-color: rgb(48, 5, 44);
+    --accent-color: rgb(108, 127, 167);
+    --font-accent-color: rgb(226, 226, 226);
+    --shadow: rgb(53, 53, 53);
+    --button-color: rgb(173, 71, 194);
+    --button-text-color: rgb(236, 233, 233);
+    --button-hover: purple;
+    --button-hover-shadow: purple;
+    --transparent: rgba(0, 0, 0, .5);
+    --link: rgb(75, 9, 71);
+    --link-visited: rgb(57, 57, 77);
+    --left-margin: 48px;
+    font-family: 'Archivo Black', sans-serif;
 
 }
 
@@ -12,11 +30,9 @@
 body {
     width: 100vw;
     height: 100vh;
-    color: aliceblue;
+    
     display: flex;
     justify-content: center;
-
-    border: 1px solid red;
 }
 
 .left-items {
@@ -29,7 +45,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: blue;
 }
 
 .img-container {
@@ -37,7 +52,7 @@ body {
     padding: 8px;
     width: 50%;
     aspect-ratio: 1;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--transparent);
     border-radius: 50%;
 
     display: flex;
@@ -51,8 +66,131 @@ body {
 }
 
 .form-container {
-    background-color: aliceblue;
-
+    background-color: var(--bg-color);
+    color: var(--font-color);
     width: 60%;
-    border: 1px solid green;
+    font-size: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.description,
+.have-account,
+button {
+    margin-right: 10%;
+    margin-left: var(--left-margin);
+}
+
+.description span {
+    font-family: 'Rubik Mono One', sans-serif;
+    
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+
+}
+
+.inputs {
+    background-color: var(--accent-color);
+    color: var(--font-accent-color);
+    font-size: .75rem;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 5px var(--shadow);
+}
+
+.form-title {
+    width: 100%;
+    margin: var(--left-margin);
+    font-size: 1rem;
+
+}
+
+.form-row {
+    margin-bottom: 40px;
+    margin-left: var(--left-margin);
+    width: 40%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.form-row input {
+    background-color: #b1b1b1;
+    border: 1px solid #979797;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid teal;
+    box-shadow: 0 0 10px #324457;
+}
+
+input:required {
+    background-color: #e4e4e4;
+}
+
+.pwd-reject,
+.pwd-msg {
+    margin-top: 4px;
+    font-size: .5rem;
+}
+
+.pwd-reject {
+    color: rgb(109, 0, 0);
+}
+
+button {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    box-shadow: 0 0 5px 1px var(--shadow);
+    font-family: inherit;
+    font-size: .6rem;
+    width: 20%;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+
+}
+
+button:hover {
+    scale: 1.05;
+    box-shadow: 0 0 5px 1px var(--button-hover-shadow);
+    background-color: var(--button-hover);
+}
+
+button:active {
+    background-color: rgb(46, 46, 85);
+}
+
+.have-account {
+    font-size: .75rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link);
+}
+
+a:visited {
+    color: var(--link-visited);
 }
